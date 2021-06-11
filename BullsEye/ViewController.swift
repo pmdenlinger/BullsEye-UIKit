@@ -8,6 +8,7 @@
 import UIKit
 
     var currentValue: Int = 1
+    var targetValue = 0
 
 
 
@@ -18,10 +19,12 @@ import UIKit
     override func viewDidLoad() {
         super.viewDidLoad()
         currentValue = lroundf(slider.value)
+        targetValue = Int.random(in: 1...100)
     }
 
     @IBAction func showAlert() {
-        let message = "The value of the slider is \(currentValue)"
+        let message = "The value of the slider is \(currentValue)" +
+        "\nThe target value is: \(targetValue)"
         
         let alert = UIAlertController(
             title: "Hello World",
