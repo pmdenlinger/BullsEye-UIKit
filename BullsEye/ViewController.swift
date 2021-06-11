@@ -7,7 +7,7 @@
 
 import UIKit
 
-    var currentValue: Int = 0
+    var currentValue: Int = 50
 
     class ViewController: UIViewController {
 
