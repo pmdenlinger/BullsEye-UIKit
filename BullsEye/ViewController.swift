@@ -7,7 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+    var currentValue: Int = 0
+
+    class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +34,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
-        print("The value of the slider is now \(slider.value)")
+        currentValue = lroundf(slider.value)
     }
 }
 
