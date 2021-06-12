@@ -24,7 +24,7 @@ import UIKit
         func startNewRound() {
             targetValue = Int.random(in: 1...100)
             currentValue = 50
-            sliderValue = Float(currentValue)
+            slider.value = Float(currentValue)
         }
 
     @IBAction func showAlert() {
