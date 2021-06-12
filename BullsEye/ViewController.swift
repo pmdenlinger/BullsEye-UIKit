@@ -46,8 +46,6 @@ import UIKit
         let difference = abs(targetValue - currentValue)
         var points = 100 - difference
         
-        
-        
         let title: String
         if difference == 0 {
             title = "Perfect"
@@ -76,14 +74,14 @@ import UIKit
         let action = UIAlertAction (
             title: "OK",
             style: .default,
-            handler: nil)
+            handler: {_ in
+                self.startNewRound()
+            })
         
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil
         )
-        startNewRound()
-        
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
