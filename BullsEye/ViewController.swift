@@ -7,8 +7,9 @@
 
 import UIKit
 
-    var currentValue: Int = 50
+    var currentValue = 0
     var targetValue = 0
+    var score = 0
 
 
 
@@ -37,6 +38,8 @@ import UIKit
     @IBAction func showAlert() {
         let difference = abs(targetValue - currentValue)
         let points = 100 - difference
+        
+        score += points
         
         let message = "You scored \(points) points."
 //        The value of the slider is \(currentValue)" +
