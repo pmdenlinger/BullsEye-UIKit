@@ -7,7 +7,7 @@
 
 import UIKit
 
-    var currentValue: Int = 1
+    var currentValue: Int = 50
     var targetValue = 0
 
 
@@ -35,11 +35,7 @@ import UIKit
         }
 
     @IBAction func showAlert() {
-        var difference = currentValue - targetValue
-         
-        if difference < 0 {
-            difference *= -1
-        }
+        let difference = abs(targetValue - currentValue)
         
         let message = "The value of the slider is \(currentValue)" +
         "\nThe target value is: \(targetValue)" + "\nThe difference is: \(difference)"
