@@ -15,6 +15,8 @@ import UIKit
     class ViewController: UIViewController {
         
         @IBOutlet var slider: UISlider!
+        @IBOutlet var targetLabel: UILabel!
+        
 
     override func viewDidLoad() {
         super.viewDidLoad()
