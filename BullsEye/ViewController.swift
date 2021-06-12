@@ -48,12 +48,23 @@ import UIKit
         
         score += points
         
+        let title: String
+        if difference == 0 {
+            title = "Perfect"
+        } else if difference < 5 {
+            title = "You almost had it!"
+        } else if difference < 10 {
+            title = "Pretty good!"
+        } else {
+            title = "Not even close..."
+        }
+        
         let message = "You scored \(points) points."
 //        The value of the slider is \(currentValue)" +
 //        "\nThe target value is: \(targetValue)" + "\nThe difference is: \(difference)"
         
         let alert = UIAlertController(
-            title: "Hello World",
+            title: title,
             message: message,
             preferredStyle: .alert)
         
