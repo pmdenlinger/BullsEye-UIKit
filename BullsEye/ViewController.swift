@@ -17,6 +17,8 @@ import UIKit
         
         @IBOutlet var slider: UISlider!
         @IBOutlet var targetLabel: UILabel!
+        @IBOutlet var scoreLabel: UILabel!
+        
         
 
     override func viewDidLoad() {
@@ -33,6 +35,7 @@ import UIKit
         
         func updateLabels() {
             targetLabel.text = String(targetValue)
+            scoreLabel.text = String(score)
         }
 
     @IBAction func showAlert() {

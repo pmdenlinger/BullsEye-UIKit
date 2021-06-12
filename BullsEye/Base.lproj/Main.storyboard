@@ -102,6 +102,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="scoreLabel" destination="6s8-cr-MNy" id="KvR-IU-a6b"/>
                         <outlet property="slider" destination="Npy-tt-h4p" id="75a-87-wW6"/>
                         <outlet property="targetLabel" destination="dbv-fQ-9Iq" id="oSw-5D-o7O"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="KNy-ri-a2Y"/>
