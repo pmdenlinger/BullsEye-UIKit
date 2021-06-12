@@ -25,7 +25,7 @@ import UIKit
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        startNewRound()
+        startNewGame()
     }
         
         func startNewRound() {
@@ -40,6 +40,12 @@ import UIKit
             targetLabel.text = String(targetValue)
             scoreLabel.text = String(score)
             roundLabel.text = String(round)
+        }
+        
+        @IBAction func startNewGame() {
+            score = 0
+            round = 0
+            startNewRound()
         }
 
     @IBAction func showAlert() {
