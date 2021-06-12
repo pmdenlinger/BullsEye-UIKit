@@ -103,7 +103,7 @@
                     </view>
                     <connections>
                         <outlet property="slider" destination="Npy-tt-h4p" id="75a-87-wW6"/>
-                        <outlet property="targetLabel" destination="Ekm-0Z-5qB" id="Rcj-z8-LoF"/>
+                        <outlet property="targetLabel" destination="dbv-fQ-9Iq" id="oSw-5D-o7O"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="KNy-ri-a2Y"/>
                     </connections>
                 </viewController>
