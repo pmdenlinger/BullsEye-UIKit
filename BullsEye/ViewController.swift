@@ -18,9 +18,14 @@ import UIKit
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        currentValue = lroundf(slider.value)
-        targetValue = Int.random(in: 1...100)
+        startNewRound()
     }
+        
+        func startNewRound() {
+            targetValue = Int.random(in: 1...100)
+            currentValue = 50
+            sliderValue = Float(currentValue)
+        }
 
     @IBAction func showAlert() {
         let message = "The value of the slider is \(currentValue)" +
@@ -40,6 +45,7 @@ import UIKit
         
         present(alert, animated: true, completion: nil
         )
+        startNewRound()
         
     }
     
