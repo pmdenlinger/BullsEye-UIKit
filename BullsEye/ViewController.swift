@@ -10,6 +10,7 @@ import UIKit
     var currentValue = 0
     var targetValue = 0
     var score = 0
+    var round = 0
 
 
 
@@ -18,6 +19,7 @@ import UIKit
         @IBOutlet var slider: UISlider!
         @IBOutlet var targetLabel: UILabel!
         @IBOutlet var scoreLabel: UILabel!
+        @IBOutlet var roundLabel: UILabel!
         
         
 
@@ -27,6 +29,7 @@ import UIKit
     }
         
         func startNewRound() {
+            round += 1
             targetValue = Int.random(in: 1...100)
             currentValue = 50
             slider.value = Float(currentValue)
@@ -36,6 +39,7 @@ import UIKit
         func updateLabels() {
             targetLabel.text = String(targetValue)
             scoreLabel.text = String(score)
+            roundLabel.text = String(round)
         }
 
     @IBAction func showAlert() {
